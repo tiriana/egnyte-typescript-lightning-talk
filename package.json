@@ -15,5 +15,8 @@
     "colors": "^1.2.1",
     "sync-exec": "^0.6.2",
     "typescript": "^2.7.2"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.3.1"
   }
 }

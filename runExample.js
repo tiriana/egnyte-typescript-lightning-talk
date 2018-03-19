@@ -30,5 +30,5 @@ const pathTs = dir + "/" + "example.ts";
 const pathJs = dir + "/" + "example.js";
 
 exec(`npm run tsc -- ${pathTs}`, "Compiling");
-exec(`cat ${pathJs}`, "Compiled file content");
-exec(`node ${pathJs}`, "Compiled file execution");
+// exec(`cat ${pathJs}`, "Compiled file content");
+// exec(`node ${pathJs}`, "Compiled file execution");
