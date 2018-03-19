@@ -5,11 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tsc": "./node_modules/.bin/tsc"
+    "tsc": "./node_modules/.bin/tsc",
+    "example": "node ./runExample.js -e",
+    "example_01": "npm run example -- 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "colors": "^1.2.1",
+    "sync-exec": "^0.6.2",
     "typescript": "^2.7.2"
   }
 }
