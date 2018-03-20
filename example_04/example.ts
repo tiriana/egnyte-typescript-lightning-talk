@@ -1,0 +1,3 @@
+interface IPerson {
+    name: string;
+}

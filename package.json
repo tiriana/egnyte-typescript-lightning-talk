@@ -6,12 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc": "./node_modules/.bin/tsc",
-    "example": "node ./runExample.js -e",
-    "example_01": "npm run example -- 1"
+    "example": "node ./runExample.js -e"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "argv": "0.0.2",
     "colors": "^1.2.1",
     "sync-exec": "^0.6.2",
     "typescript": "^2.7.2"
