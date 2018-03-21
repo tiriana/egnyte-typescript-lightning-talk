@@ -6,7 +6,6 @@ interface IPerson {
 }
 
 class Person implements IPerson {
-    [x: number]: String;
 }
 
 // class Person implements IPerson {

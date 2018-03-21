@@ -11,12 +11,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/mathjs": "0.0.38",
     "argv": "0.0.2",
     "colors": "^1.2.1",
+    "mathjs": "^4.0.1",
     "sync-exec": "^0.6.2",
     "typescript": "^2.7.2"
-  },
-  "devDependencies": {
-    "@types/jquery": "^3.3.1"
   }
 }
