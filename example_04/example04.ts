@@ -5,8 +5,12 @@ interface IPerson {
     arr?: Array<string>
 }
 
-class Person implements IPerson {
+interface IRadek extends IPerson {
+    isRadek: boolean;
 }
+
+// class Radek implements IRadek {
+// }
 
 // class Person implements IPerson {
 //     public readonly name = "";
