@@ -1,3 +1,5 @@
+const fooa = 123;
+
 export const foo: string = "bar"
 export default foo
 export function fn() { return foo }

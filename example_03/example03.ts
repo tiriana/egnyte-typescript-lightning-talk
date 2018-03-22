@@ -1,4 +1,4 @@
-export class Class {
+class Class {
     private privateNum: number;
     public publicString: string;
     public publicStringWithDefaultVal: string = "";

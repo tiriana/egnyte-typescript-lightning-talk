@@ -1,4 +1,4 @@
-// / <reference path="./mathjs.d.ts" />
+/// <reference path="./mathjs.d.ts" />
 
 import mathjs = require("mathjs")
 

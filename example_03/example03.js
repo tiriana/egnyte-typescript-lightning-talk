@@ -8,38 +8,25 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-(function (factory) {
-    if (typeof module === "object" && typeof module.exports === "object") {
-        var v = factory(require, exports);
-        if (v !== undefined) module.exports = v;
+var Class = (function () {
+    function Class() {
+        this.publicStringWithDefaultVal = "";
+        this.protectedField = !!0;
     }
-    else if (typeof define === "function" && define.amd) {
-        define(["require", "exports"], factory);
+    Object.defineProperty(Class.prototype, "a", {
+        get: function () { return 5; },
+        enumerable: true,
+        configurable: true
+    });
+    return Class;
+}());
+var Child = (function (_super) {
+    __extends(Child, _super);
+    function Child() {
+        return _super !== null && _super.apply(this, arguments) || this;
     }
-})(function (require, exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    var Class = (function () {
-        function Class() {
-            this.publicStringWithDefaultVal = "";
-            this.protectedField = !!0;
-        }
-        Object.defineProperty(Class.prototype, "a", {
-            get: function () { return 5; },
-            enumerable: true,
-            configurable: true
-        });
-        return Class;
-    }());
-    exports.Class = Class;
-    var Child = (function (_super) {
-        __extends(Child, _super);
-        function Child() {
-            return _super !== null && _super.apply(this, arguments) || this;
-        }
-        Child.prototype.foo = function () {
-            return this.protectedField || this.a;
-        };
-        return Child;
-    }(Class));
-});
+    Child.prototype.foo = function () {
+        return this.protectedField || this.a;
+    };
+    return Child;
+}(Class));

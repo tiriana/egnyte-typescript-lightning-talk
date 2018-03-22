@@ -9,8 +9,10 @@ interface IRadek extends IPerson {
     isRadek: boolean;
 }
 
-// class Radek implements IRadek {
-// }
+class Radek implements IRadek {
+    isRadek = true;
+    name = "radek";
+}
 
 // class Person implements IPerson {
 //     public readonly name = "";
